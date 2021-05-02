@@ -19,10 +19,10 @@ class ProductController extends BaseController
     {
         
         $products = Product::all();
-        dd($products);
     
         return $this->sendResponse(ProductResource::collection($products), 'Products retrieved successfully.');
     }
+
     /**
      * Store a newly created resource in storage.
      *
